@@ -12,7 +12,9 @@ import (
 
 func main() {
 
+	config.InitializeEnv()
 	config.InitializeDb()
+
 	fmt.Println("Starting new service!!!")
 
 	server := gin.New()

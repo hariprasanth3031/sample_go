@@ -2,6 +2,8 @@ package routes
 
 import "github.com/gin-gonic/gin"
 
-func CreateRoutes(*gin.RouterGroup) {
+func CreateRoutes(server *gin.RouterGroup) {
+
+	CreateUserRoutes(server)
 
 }
